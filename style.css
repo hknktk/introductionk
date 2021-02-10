@@ -126,7 +126,7 @@ h1#title{
   width: 40%;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(236, 100, 100);
+  color: rgb(100, 215, 236);
   line-height: 1.5px;
   position: absolute;
   left: 20%;
@@ -346,23 +346,23 @@ h1#title{
   transform: translate(-150px,-150px);
   transition: 1.5s;
   visibility: hidden;
-  background-color: rgb(255, 120, 120);
+  background-color: rgba(85, 215, 248, 0.7);
 }
 
 .introduction .box{
-  bottom: 30px;
+  bottom: 10px;
 }
 
 .hobby .box{
-  bottom: 80px;
+  bottom: 60px;
 }
 
 .refresh .box{
-  bottom: 30px;
+  bottom: 10px;
 }
 
 .future .box{
-  bottom: 130px;
+  bottom: 110px;
 }
 
 
@@ -401,7 +401,7 @@ h1#title{
 .box li span{
   font-size: 18px;
   font-weight: bold;
-  color: rgb(220, 255, 24);
+  color: rgb(240, 36, 36);
 }
 
 .box p{
@@ -414,17 +414,17 @@ h1#title{
 }
 
 .box p span{
-  color: rgb(220, 255, 24);
+  color: rgb(240, 36, 36);
   font-weight: bold;
 }
 
 .block .photo{
-  width: 80%;
+  width: 75%;
   height: 300px;
   visibility: hidden;
   transition: 1s;
   position: absolute;
-  top: 40px;
+  top: 30px;
 }
 
 .block:nth-of-type(odd) .photo{
