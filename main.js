@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded',function(){
   const $mask       = document.getElementById("mask");
   const $body       = document.querySelector("body");
   const $html       = document.querySelector("html");
+  const $bar        = document.getElementById("nav");
+
   
 
   
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded',function(){
     $mask.classList.toggle("active");
     $body.classList.toggle("none");
     $html.classList.toggle("none");
+    $bar.classList.toggle("none");
   })
   
   $mask.addEventListener("click",function(){

@@ -145,6 +145,10 @@ h1#title{
   left: 20%;
 }
 
+#nav.none{
+  display: none;
+}
+
 #nav ul{
   display: flex;
   width: 100%;
@@ -302,23 +306,25 @@ h1#title{
 
 
 .block:nth-of-type(odd) h2{
-  left: 65%;
+  left: 35%;
   top: -5%;
 }
 
 .block:nth-of-type(odd) h3{
-  left: 65%;
+  left: 35%;
   top: 0%;
+  padding: 2px;
 }
 
 .block:nth-of-type(even) h2{
-  left: 5%;
+  left: 35%;
   top: -5%;
 }
 
 .block:nth-of-type(even) h3{
-  left: 5%;
+  left: 35%;
   top: 0%;
+  padding: 2px;
 }
 
 .js-target{
@@ -344,30 +350,30 @@ h1#title{
 }
 
 .introduction .box{
-  bottom: 100px;
+  bottom: 30px;
 }
 
 .hobby .box{
-  bottom: 150px;
+  bottom: 80px;
 }
 
 .refresh .box{
-  bottom: 100px;
+  bottom: 30px;
 }
 
 .future .box{
-  bottom: 200px;
+  bottom: 130px;
 }
 
 
 
 .block:nth-of-type(odd) .box{
-  right: 0;
+  right: 2px;
   transform: translateY(-50px);
 }
 
 .block:nth-of-type(even) .box{
-  left: 0;
+  left: 2px;
   transform: translateY(-50px);
 }
 
@@ -418,7 +424,7 @@ h1#title{
   visibility: hidden;
   transition: 1s;
   position: absolute;
-  top: 20px;
+  top: 40px;
 }
 
 .block:nth-of-type(odd) .photo{
