@@ -548,15 +548,21 @@ hr{
   }
   
   .background{
-    height: 500px;
+    height: 600px;
   } 
   
   .video-container{
-    height: 500px;
+    height: 600px;
+  }
+
+  .video-container video{
+    height: 600px;
+    width: 100%;
   }
 
   h1#title{
-    top: 170px;
+    top: 250px;
+    left: 2%;
     font-size: 50px;
     animation: zoomInPC 1.5s;
     height: 300px;
@@ -712,13 +718,14 @@ hr{
   
   .block:nth-of-type(odd) .box{
     width: 60%;
-    min-height: 700px;
+    min-height: 550px;
     transform: translate(-150px,-150px);
   }
   
   .block:nth-of-type(even) .box{
     width: 60%;
-    min-height: 500px;
+    min-height: 400px;
+    padding: 50px auto;
     transform: translate(150px,-150px);
   }
   
