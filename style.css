@@ -667,6 +667,12 @@ hr{
     padding: 150px 5px 0px;
   }
 
+  .block{
+    min-height: 150vh;
+    padding: 20px 0px 100px;
+    margin: 40px auto;
+  }
+
   
   
   
@@ -679,38 +685,45 @@ hr{
   
   .block h3.eng{
     font-size: 35px;
+    padding: 2px;
   } 
   
   
   .block:nth-of-type(odd) h2{
-    left: 65%;
+    left: 40%;
     top: -5%;
   }
   
   .block:nth-of-type(odd) h3{
-    left: 65%;
-    top: 5%;
+    left: 45%;
+    top: 0%;
   }
   
   .block:nth-of-type(even) h2{
-    left: 5%;
+    left: 40%;
     top: 0%;
   }
   
   .block:nth-of-type(even) h3{
-    left: 5%;
-    top: 10%;
+    left: 45%;
+    top: 5%;
   }
   
   
   .block:nth-of-type(odd) .box{
     width: 60%;
-    min-height: 600px;
+    min-height: 700px;
     transform: translate(-150px,-150px);
   }
   
+  .block:nth-of-type(even) .box{
+    width: 60%;
+    min-height: 500px;
+    transform: translate(150px,-150px);
+  }
+  
   .introduction .box{
-    top: 15%;
+    bottom: 50px;
   }
   
   .hobby .box{
@@ -718,7 +731,7 @@ hr{
   }
   
   .refresh .box{
-    top: 15%;
+    bottom: 50px;
   }
   
   .future .box{
