@@ -22,6 +22,7 @@ header a{
 
 header{
   height: 400px;
+  padding: 0;
 }
 
 .background{
@@ -130,7 +131,7 @@ h1#title{
   line-height: 1.5px;
   position: absolute;
   left: 20%;
-  top: 20px;
+  top: 40px;
   padding: 0px 5px;
   white-space: nowrap;
   font-family: serif;
@@ -138,16 +139,9 @@ h1#title{
 
 
 #nav{
-  width: 75%;
-  height: 70px;
-  position: absolute;
-  top: 0;
-  left: 20%;
-}
-
-#nav.none{
   display: none;
 }
+
 
 #nav ul{
   display: flex;
@@ -346,7 +340,7 @@ h1#title{
   transform: translate(-150px,-150px);
   transition: 1.5s;
   visibility: hidden;
-  background-color: rgba(11, 140, 172, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .introduction .box{
@@ -389,7 +383,7 @@ h1#title{
 
 .box li{
   font-size: 16px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: serif;
   line-height: 1.5;
 }
@@ -407,7 +401,7 @@ h1#title{
 .box p{
   font-size:16px;
   font-family: serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   line-height: 1.5;
   text-align: justify;
@@ -458,6 +452,15 @@ hr{
   
   .container{
     padding: 50px 5px 50px;
+  }
+
+  #nav{
+    width: 75%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: block;
   }
   
 
