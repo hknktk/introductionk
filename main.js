@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded',function(){
   document.addEventListener("scroll", function(){
   for (let i = 0; i<targetElement2.length; i++){
     const getElementDistance =targetElement2[i].
-    getBoundingClientRect().top + targetElement2[i].clientHeight * .1
+    getBoundingClientRect().top + targetElement2[i].clientHeight * .8
     if(window.innerHeight > getElementDistance){
       targetElement2[i].classList.add("show");
     }

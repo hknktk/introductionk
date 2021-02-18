@@ -337,9 +337,9 @@ h1#title{
   min-height: 100px;
   padding: 10px 5px;
   position: absolute;
-  transform: translate(-150px,-150px);
-  transition: 1.5s;
+  transition: 3s;
   visibility: hidden;
+  opacity: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -363,18 +363,19 @@ h1#title{
 
 .block:nth-of-type(odd) .box{
   right: 2px;
-  transform: translateY(-50px);
+  transform: translateX(-40px);
 }
 
 .block:nth-of-type(even) .box{
   left: 2px;
-  transform: translateY(-50px);
+  transform: translateX(40px);
 }
 
 .block:nth-of-type(odd) .box.show,
 .block:nth-of-type(even) .box.show{
   transform: none;
   visibility: visible;
+  opacity: 1;
 }
 
 .box ul{
@@ -415,24 +416,18 @@ h1#title{
 .block .photo{
   width: 75%;
   height: 300px;
-  visibility: hidden;
-  transition: 1s;
+  transition: 2s;
+  opacity: .1;
+  filter: saturate(.1);
   position: absolute;
   top: 30px;
 }
 
-.block:nth-of-type(odd) .photo{
-  transform: translateY(100px) scale(.5);
-}
-
-.block:nth-of-type(even) .photo{
-  transform: translateY(100px) scale(.5);
-}
 
 
 .block .photo.show{
-  transform: none;
-  visibility: visible;
+  opacity: 1;
+  filter: saturate(.8);
 } 
 
 
