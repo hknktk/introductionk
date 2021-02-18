@@ -508,16 +508,6 @@ hr{
   
   
   
-  .block:nth-of-type(odd) .box{
-    right: 0;
-    transform: translate(-50px,-50px) scale(.6);
-  }
-  
-  .block:nth-of-type(even) .box{
-    left: 0;
-    transform: translate(50px,-50px) scale(.6);
-  }
-  
   .block .photo{
     top: 100px;
   }
@@ -766,14 +756,6 @@ hr{
   .block .photo{
     width: 60%;
     height: 500px;
-  }
-  
-  .block:nth-of-type(odd) .photo{
-    transform: translate(100px,100px) scale(.5);
-  }
-  
-  .block:nth-of-type(even) .photo{
-    transform: translate(100px,-100px) scale(.5);
   }
   
   
