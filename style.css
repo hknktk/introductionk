@@ -194,20 +194,18 @@ h1#title{
 
 .menuButton.active div:nth-of-type(1){
   transform: rotate(45deg);
-  background-color: #fff;
   transition: 1s;
   z-index: 2;
 }
 
 .menuButton.active div:nth-of-type(2){
   transform: scale(2.1,36);
-  background-color: rgb(110, 47, 47);
+  background-color: rgb(229, 254, 255);
   transition: 1.2s;
 }
 
 .menuButton.active div:nth-of-type(3){
   transform: rotate(-45deg);
-  background-color: #fff;
   transition: 1s;
 }
 
@@ -217,7 +215,7 @@ h1#title{
   left: 0;
   height: 100vh;
   width: 70%;
-  background-color: rgb(110, 47, 47);
+  background-color: rgb(229, 254, 255);
   z-index: 4;
   transform: translateX(-1000px);
   transition: 1.2s;
@@ -249,7 +247,7 @@ h1#title{
 
 #slideNav ul a{
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(209, 63, 63);
   font-family: serif;
 }
 
@@ -266,8 +264,9 @@ h1#title{
 .block{
   width: 100%;
   background-color: #fff;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .block:not(:first-of-type){
@@ -275,7 +274,7 @@ h1#title{
 }
 
 .block h2{
-  position: absolute;
+  text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin-top: -100px;
@@ -287,11 +286,12 @@ h1#title{
 
 
 .block h3.eng{
-  position: absolute;
+  text-align: center;
   font-size: 16px;
   font-style: italic;
   font-family: 'Roboto', sans-serif;
   color: rgb(0, 153, 255);
+  margin-top: 0px;
 } 
 
   h3.eng:before{
@@ -299,27 +299,6 @@ h1#title{
 }
 
 
-.block:nth-of-type(odd) h2{
-  left: 35%;
-  top: -5%;
-}
-
-.block:nth-of-type(odd) h3{
-  left: 35%;
-  top: 0%;
-  padding: 2px;
-}
-
-.block:nth-of-type(even) h2{
-  left: 35%;
-  top: -5%;
-}
-
-.block:nth-of-type(even) h3{
-  left: 35%;
-  top: 0%;
-  padding: 2px;
-}
 
 .js-target{
   display: flex;
@@ -333,49 +312,33 @@ h1#title{
 
 .block .box{
   display: block;
-  width: 90%;
+  width: 100%;
+  margin:  60px auto;
   min-height: 100px;
-  padding: 10px 5px;
-  position: absolute;
-  transition: 1s;
+  padding: 20px 10px;
+  /* position: absolute; */
+  transition: 2s;
   visibility: hidden;
+  opacity: 0;
+  background-color: rgb(229, 254, 255);
+  transform: scale(.8);
+  transform-origin: center;
+}
+
+.box.show{
+  transform: none;
+  visibility: visible;
   opacity: 1;
-  background-color: rgb(255, 255, 255)
-}
-
-.introduction .box{
-  bottom: 10px;
-}
-
-.hobby .box{
-  bottom: 60px;
-}
-
-.refresh .box{
-  bottom: 10px;
-}
-
-.future .box{
-  bottom: 110px;
 }
 
 
 
-.block:nth-of-type(odd) .box{
-  right: 2px;
-  transform: translateX(-20px);
-}
 
-.block:nth-of-type(even) .box{
-  left: 2px;
-  transform: translateX(20px);
-}
 
 .block:nth-of-type(odd) .box.show p,
 .block:nth-of-type(odd) .box.show ul,
 .block:nth-of-type(even) .box.show p,
-.block:nth-of-type(even) .box.show ul,
-.box.box.show
+.block:nth-of-type(even) .box.show ul
 {
   transform: none;
   visibility: visible;
@@ -419,22 +382,10 @@ h1#title{
   font-weight: bold;
 }
 
-.block .photo{
-  width: 75%;
-  height: 300px;
-  transition: 2s;
-  opacity: 0;
-  transform: rotateY(60deg);
-  position: absolute;
-  top: 30px;
-}
 
 
 
-.block .photo.show{
-  opacity: 1;
-  transform: none;
-} 
+
 
 
 hr{
